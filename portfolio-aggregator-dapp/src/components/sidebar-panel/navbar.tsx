@@ -1,6 +1,7 @@
 import { ThemeToggle } from "@/components/theme-toggle";
-import { UserNav } from "@/components/sidebar-panel/user-nav";
 import { SheetMenu } from "@/components/sidebar-panel/sheet-menu";
+import SelectNetwork from "../app-navbar/select-network";
+import MenuToolkit from "../app-navbar/menu-toolkit";
 
 interface NavbarProps {
   title: string;
@@ -13,10 +14,13 @@ export function Navbar({ title }: NavbarProps) {
         <div className="flex items-center space-x-4 lg:space-x-0">
           <SheetMenu />
           <h1 className="font-bold">{title}</h1>
+          <div className="lg:pl-5">
+            <MenuToolkit />
+          </div>
         </div>
         <div className="flex flex-1 items-center space-x-2 justify-end">
           <ThemeToggle />
-          <UserNav />
+          <SelectNetwork />
         </div>
       </div>
     </header>
