@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { inter } from "@/fonts/font";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+import { ThemeProvider } from "@/context/theme-provider";
 
 export const metadata: Metadata = {
   title: "Portfolio Radar - A web3 data aggregator dapp.",
   description:
-    "Portfolio Radar (Port-Radar) is a Decentralized Application (DApp) that enables users to aggregate web3 data in auser friendly & modern UI",
+    "Portfolio Radar (Port-Radar) is a Decentralized Application (DApp) that enables users to aggregate web3 data in a user friendly & modern UI",
 };
 
 export default function RootLayout({
@@ -16,8 +16,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={inter.className}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
