@@ -2,10 +2,10 @@ import Link from "next/link";
 import { Radar } from "lucide-react";
 
 import { cn } from "@/lib/utils";
-import { useStore } from "@/hooks/useStore";
+import { useStore } from "@/hooks/use-store";
 import { Button } from "@/components/ui/button";
 import { Menu } from "@/components/sidebar-panel/menu";
-import { useSidebarToggle } from "@/hooks/useSidebarToggle";
+import { useSidebarToggle } from "@/hooks/use-sidebar-toggle";
 import { SidebarToggle } from "@/components/sidebar-panel/sidebar-toggle";
 
 export function Sidebar() {
