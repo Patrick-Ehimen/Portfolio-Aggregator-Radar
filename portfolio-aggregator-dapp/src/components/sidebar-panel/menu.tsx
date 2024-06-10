@@ -15,6 +15,7 @@ import {
   TooltipContent,
   TooltipProvider,
 } from "@/components/ui/tooltip";
+import MobileThemeToggle from "../mobile-theme-toggle";
 
 interface MenuProps {
   isOpen: boolean | undefined;
@@ -103,6 +104,9 @@ export function Menu({ isOpen }: MenuProps) {
               )}
             </li>
           ))}
+          <div className="md:hidden flex">
+            <MobileThemeToggle />
+          </div>
           <li className="w-full grow flex items-end">
             <TooltipProvider disableHoverableContent>
               <Tooltip delayDuration={100}>
