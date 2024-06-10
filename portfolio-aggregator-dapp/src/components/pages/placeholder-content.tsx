@@ -26,6 +26,47 @@ export default function PlaceholderContent() {
                 Designed by Freepikssd
               </Link>
             </div>
+
+            <div className="absolute -bottom-8 right-0">
+              <Link
+                href="https://www.freepik.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-muted-foreground"
+              >
+                Designed by Freepikssd
+              </Link>
+            </div>
+            <div className="absolute -bottom-8 right-0">
+              <Link
+                href="https://www.freepik.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-muted-foreground"
+              >
+                Designed by Freepikssd
+              </Link>
+            </div>
+            <div className="absolute -bottom-8 right-0">
+              <Link
+                href="https://www.freepik.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-muted-foreground"
+              >
+                Designed by Freepikssd
+              </Link>
+            </div>
+            <div className="absolute -bottom-8 right-0">
+              <Link
+                href="https://www.freepik.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-muted-foreground"
+              >
+                Designed by Freepikssd
+              </Link>
+            </div>
           </div>
         </div>
       </CardContent>

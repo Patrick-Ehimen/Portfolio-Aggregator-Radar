@@ -11,6 +11,11 @@ import News from "./icons/News.svg";
 import TradeAPI from "./icons/TradeAPI.svg";
 import Wallet from "./icons/Wallet.svg";
 import Widgets from "./icons/Widget.svg";
+import MetamaskWallet from "./wallets/MetamaskWallet.svg";
+import PhantomWallet from "./wallets/PhantomWallet.svg";
+import CoinbaseWallet from "./wallets/CoinbaseWallet.svg";
+import WalletConnectWallet from "./wallets/WalletConnectWallet.svg";
+import Oxose from "./oxose.jpeg";
 
 export {
   Arbitrum,
@@ -26,4 +31,9 @@ export {
   TradeAPI,
   Wallet,
   Widgets,
+  MetamaskWallet,
+  PhantomWallet,
+  CoinbaseWallet,
+  WalletConnectWallet,
+  Oxose,
 };

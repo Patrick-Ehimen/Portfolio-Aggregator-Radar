@@ -42,7 +42,7 @@ export default function SelectNetwork() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" className=" rounded-full">
+        <Button variant="outline" className=" rounded-full p-2">
           <Image
             src={
               // Find the selected network object by matching the selectedNetworkId
