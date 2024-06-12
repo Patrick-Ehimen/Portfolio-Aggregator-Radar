@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import PlaceholderContent from "@/components/pages/placeholder-content";
+import CoinsContent from "@/components/pages/coins-content";
 import { ContentLayout } from "@/components/sidebar-panel/content-layout";
 import {
   Breadcrumb,
@@ -11,9 +11,9 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 
-export default function DefiPage() {
+export default function MarketPage() {
   return (
-    <ContentLayout title="DeFi">
+    <ContentLayout title="All Rankings">
       <Breadcrumb>
         <BreadcrumbList>
           <BreadcrumbItem>
@@ -29,17 +29,11 @@ export default function DefiPage() {
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <BreadcrumbLink asChild>
-              <Link href="/categories">Categories</Link>
-            </BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-            <BreadcrumbPage>DeFi</BreadcrumbPage>
+            <BreadcrumbPage>Coins</BreadcrumbPage>
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
-      <PlaceholderContent />
+      <CoinsContent />
     </ContentLayout>
   );
 }
