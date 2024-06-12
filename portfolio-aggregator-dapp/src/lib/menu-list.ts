@@ -7,6 +7,7 @@ import {
   List,
   LayoutDashboard,
   Newspaper,
+  CircleDollarSign,
 } from "lucide-react";
 
 type Submenu = {
@@ -47,28 +48,34 @@ export function getMenuList(pathname: string): Group[] {
       groupLabel: "All Rankings", // Group label for content related menus
       menus: [
         {
-          href: "", // Parent menu for Categories
-          label: "Categories", // Label for the Categories menu
-          active: pathname.includes("/categories"), // Check if the current path includes "/posts"
-          icon: List, // Icon for Categories menu
+          href: "", // Parent menu for markets
+          label: "Markets", // Label for the Categories menu
+          active: pathname.includes("/markets"), // Check if the current path includes "/posts"
+          icon: CircleDollarSign, // Icon for Categories menu
           submenus: [
             {
-              href: "/categories", // Submenu item for all trending
-              label: "Trending", // Label for Trending submenu
-              active: pathname === "/categories", // Check if the current path is exactly "/categories"
+              href: "/markets", // Submenu item for all trending
+              label: "Coins", // Label for Trending submenu
+              active: pathname === "/markets", // Check if the current path is exactly "/markets"
               icon: List,
             },
             {
-              href: "/categories/defi", // Submenu item for defi post
-              label: "DeFi", // Label for defi Categories submenu
-              active: pathname === "/categories/defi", // Check if the current path is exactly "/categories/defi"
+              href: "/markets/overview", // Submenu item for overview post
+              label: "Overview", // Label for overview markets submenu
+              active: pathname === "/markets/overview", // Check if the current path is exactly "/markets/overview"
+              icon: List,
+            },
+            {
+              href: "/markets/nft", // Submenu item for nft post
+              label: "NFT", // Label for nft markets submenu
+              active: pathname === "/markets/nft", // Check if the current path is exactly "/markets/nft"
               icon: List,
             },
           ],
         },
         {
           href: "/cryptoprice", // Menu item for Cryptoprice
-          label: "Cryptocurreny Prices", // Label for Cryptoprice menu
+          label: "Cryptocurreny", // Label for Cryptoprice menu
           active: pathname.includes("/cryptoprice"), // Check if the current path includes "/cryptoprice"
           icon: Coins, // Icon for Coins menu
           submenus: [], // No submenus for Cryptoprice
