@@ -6,7 +6,7 @@ import { title } from "process";
 
 export function MarketsMenubar() {
   return (
-    <div className="h-[16rem] rounded-md flex flex-col antialiased dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+    <div className="h-[10rem] rounded-md flex flex-col antialiased dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
       <InfiniteMovingCards items={stats} direction="right" speed="slow" />
     </div>
   );
