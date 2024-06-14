@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Oxose } from "../../../public/assets";
 
 import { Card, CardContent } from "@/components/ui/card";
-import MarketsMenubar from "@/features/markets-menubar";
+import { MarketsMenubar } from "@/features/markets-infinite-menubar";
 
 export default function CoinsContent() {
   return (

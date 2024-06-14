@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import PlaceholderContent from "@/components/pages/placeholder-content";
+import ExchangeContent from "@/components/pages/exchange-content";
 import { ContentLayout } from "@/components/sidebar-panel/content-layout";
 import {
   Breadcrumb,
@@ -29,11 +29,11 @@ export default function CryptoPricePage() {
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <BreadcrumbPage>Cryptocurreny Prices</BreadcrumbPage>
+            <BreadcrumbPage>Cryptocurreny</BreadcrumbPage>
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
-      <PlaceholderContent />
+      <ExchangeContent />
     </ContentLayout>
   );
 }
