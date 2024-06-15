@@ -1,27 +1,42 @@
+"use client";
+
+import React from "react";
 import { Grip } from "lucide-react";
 import Image from "next/image";
 
+import { cn } from "@/lib/utils";
 import {
   HoverCard,
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
+import { useSidebarToggle } from "@/hooks/use-sidebar-toggle";
 
-import { hoverMenuItems } from "../../../constants";
-
-import React from "react";
+import { hoverMenuItems } from "../../constants";
+import { useStore } from "zustand";
 
 export default function MenuToolkit() {
+  const sidebar = useStore(useSidebarToggle, (state) => state);
+  if (!sidebar) return null;
+
   return (
     <HoverCard>
       <HoverCardTrigger asChild>
         <Grip className="cursor-pointer" />
       </HoverCardTrigger>
 
-      <HoverCardContent className="ml-24 w-[600px]">
+      <HoverCardContent
+        className={cn(
+          "w-[600px]",
+          sidebar?.isOpen === false ? "ml-24" : "ml-72"
+        )}
+      >
         <div className="py-1 grid grid-cols-2 gap-4">
           {hoverMenuItems.map((item, index) => (
-            <div key={index} className="cursor-pointer">
+            <div
+              key={index}
+              className="cursor-pointer hover:bg-slate-200 dark:hover:bg-slate-800 rounded-lg p-2"
+            >
               <div className="flex">
                 <Image
                   src={item.img}
