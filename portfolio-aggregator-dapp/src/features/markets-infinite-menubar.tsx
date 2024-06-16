@@ -12,7 +12,7 @@ export default async function GlobalMarketsMetricsMenubar() {
     {
       method: "GET",
       headers: {
-        "X-CMC_PRO_API_KEY": "73f65405-6db8-4a76-8017-74530cc5656a",
+        "X-CMC_PRO_API_KEY": process.env.COINMARKETCAP_API_KEY || "",
       },
       next: { revalidate: 86400 }, // Cache revalidation period
     }
