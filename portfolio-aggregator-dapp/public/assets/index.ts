@@ -16,6 +16,11 @@ import PhantomWallet from "./wallets/PhantomWallet.svg";
 import CoinbaseWallet from "./wallets/CoinbaseWallet.svg";
 import WalletConnectWallet from "./wallets/WalletConnectWallet.svg";
 import Oxose from "./oxose.jpeg";
+import BitcoinIcon from "./icons/BitcoinIcon.svg";
+import UsdtIcon from "./icons/UsdtIcon.svg";
+import SolanaIcon from "./icons/SolanaIcon.svg";
+import UsdcIcon from "./icons/UsdcIcon.svg";
+import TronIcon from "./icons/TronIcon.svg";
 
 export {
   Arbitrum,
@@ -36,4 +41,9 @@ export {
   CoinbaseWallet,
   WalletConnectWallet,
   Oxose,
+  BitcoinIcon,
+  UsdtIcon,
+  SolanaIcon,
+  UsdcIcon,
+  TronIcon,
 };

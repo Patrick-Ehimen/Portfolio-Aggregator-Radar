@@ -16,7 +16,7 @@ export function Navbar({ title }: NavbarProps) {
         <div className="flex items-center space-x-4 lg:space-x-0">
           <SheetMenu />
           <h1 className="font-bold">{title}</h1>
-          <div className="lg:pl-5 hidden lg:block">
+          <div className="lg:pl-5 hidden md:block">
             <MenuToolkit />
           </div>
         </div>
