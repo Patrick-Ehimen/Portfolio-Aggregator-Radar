@@ -18,7 +18,10 @@ import {
   BitcoinIcon,
   UsdtIcon,
   Oxose,
-  SolanaIcon,
+  Squre1,
+  Squre2,
+  Squre3,
+  Squre4,
 } from "../../public/assets";
 import GroupAvatar from "@/features/avatar/group-avatar";
 import GroupAvatarMobile from "./avatar/group-avatar-mobile";
@@ -137,16 +140,50 @@ const SkeletonTwo = () => {
       whileHover="hover"
       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
     >
-      {arr.map((_, i) => (
-        <motion.div
-          key={"skelenton-two" + i}
-          variants={variants}
-          style={{
-            maxWidth: Math.random() * (100 - 40) + 40 + "%",
-          }}
-          className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-neutral-100 dark:bg-[#020817] w-full h-4"
-        ></motion.div>
-      ))}
+      <motion.div
+        variants={variants}
+        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-white dark:bg-[#020817]"
+      >
+        <Image
+          src={Squre1}
+          alt="img"
+          className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0"
+        />
+        <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-[#020817]" />
+      </motion.div>
+      <motion.div
+        variants={variants}
+        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 w-3/4 ml-auto bg-white dark:bg-[#020817]"
+      >
+        <Image
+          src={Squre2}
+          alt=""
+          className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0"
+        />
+        <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-[#020817]" />
+      </motion.div>
+      <motion.div
+        variants={variants}
+        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 bg-white dark:bg-[#020817]"
+      >
+        <Image
+          src={Squre3}
+          alt=""
+          className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0"
+        />
+        <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-[#020817]" />
+      </motion.div>
+      <motion.div
+        variants={variants}
+        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 w-3/4 ml-auto bg-white dark:bg-[#020817] pb-1"
+      >
+        <Image
+          src={Squre4}
+          alt=""
+          className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0"
+        />
+        <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-[#020817]" />
+      </motion.div>
     </motion.div>
   );
 };
@@ -223,7 +260,7 @@ const SkeletonFour = () => {
           Just code in Vanilla Javascript
         </p>
         <p className="border border-red-500 bg-red-100 dark:bg-red-900/20 text-red-600 text-xs rounded-full px-2 py-0.5 mt-4">
-          Delusional
+          Bitcoin
         </p>
       </motion.div>
       <motion.div className="h-full relative w-1/3 rounded-2xl bg-white p-4 dark:bg-[#020817] dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center">
@@ -238,7 +275,7 @@ const SkeletonFour = () => {
           Tailwind CSS is cool, you know
         </p>
         <p className="border border-green-500 bg-green-100 dark:bg-green-900/20 text-green-600 text-xs rounded-full px-2 py-0.5 mt-4">
-          Sensible
+          Ethereum
         </p>
       </motion.div>
       <motion.div
@@ -247,18 +284,11 @@ const SkeletonFour = () => {
       >
         <GroupAvatar />
         <GroupAvatarMobile />
-        {/* <Image
-          src={SolanaIcon}
-          alt="avatar"
-          height="100"
-          width="100"
-          className="rounded-full h-10 lg:hidden w-10"
-        /> */}
         <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 dark:text-slate-200 mt-4">
           I love angular, RSC, and Redux.
         </p>
         <p className="border border-orange-500 bg-orange-100 dark:bg-orange-900/20 text-orange-600 text-xs rounded-full px-2 py-0.5 mt-4">
-          Helpless
+          Altcoins
         </p>
       </motion.div>
     </motion.div>
@@ -336,7 +366,7 @@ const items = [
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Market Dominance",
+    title: "Market Stats",
     description: (
       <span className="text-sm">
         Let AI handle the proofreading of your documents.

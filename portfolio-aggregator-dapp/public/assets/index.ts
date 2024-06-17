@@ -21,6 +21,10 @@ import UsdtIcon from "./icons/UsdtIcon.svg";
 import SolanaIcon from "./icons/SolanaIcon.svg";
 import UsdcIcon from "./icons/UsdcIcon.svg";
 import TronIcon from "./icons/TronIcon.svg";
+import Squre1 from "./icons/square1.svg";
+import Squre2 from "./icons/square2.svg";
+import Squre3 from "./icons/square3.svg";
+import Squre4 from "./icons/square4.svg";
 
 export {
   Arbitrum,
@@ -46,4 +50,8 @@ export {
   SolanaIcon,
   UsdcIcon,
   TronIcon,
+  Squre1,
+  Squre2,
+  Squre3,
+  Squre4,
 };

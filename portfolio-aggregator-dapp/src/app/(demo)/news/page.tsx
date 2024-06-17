@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import PlaceholderContent from "@/components/pages/placeholder-content";
+import NewsContent from "@/components/pages/news-content";
 import { ContentLayout } from "@/components/sidebar-panel/content-layout";
 import {
   Breadcrumb,
@@ -33,7 +33,7 @@ export default function NewsPage() {
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
-      <PlaceholderContent />
+      <NewsContent />
     </ContentLayout>
   );
 }
