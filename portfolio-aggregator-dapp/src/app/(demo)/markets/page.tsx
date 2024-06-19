@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import CoinsContent from "@/components/pages/coins-content";
+import CoinsContent from "@/components/page-contents/coins-content";
 import { ContentLayout } from "@/components/sidebar-panel/content-layout";
 import {
   Breadcrumb,

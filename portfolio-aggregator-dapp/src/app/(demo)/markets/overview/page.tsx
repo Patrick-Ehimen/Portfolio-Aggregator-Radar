@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import OverviewContent from "@/components/pages/overview-content";
+import OverviewContent from "@/components/page-contents/overview-content";
 import { ContentLayout } from "@/components/sidebar-panel/content-layout";
 import {
   Breadcrumb,

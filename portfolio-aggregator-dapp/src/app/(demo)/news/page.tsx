@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import NewsContent from "@/components/pages/news-content";
+import NewsContent from "@/components/page-contents/news-content";
 import { ContentLayout } from "@/components/sidebar-panel/content-layout";
 import {
   Breadcrumb,

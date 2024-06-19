@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import ExchangeContent from "@/components/pages/exchange-content";
+import ExchangeContent from "@/components/page-contents/exchange-content";
 import { ContentLayout } from "@/components/sidebar-panel/content-layout";
 import {
   Breadcrumb,
